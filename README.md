@@ -21,21 +21,21 @@ Instead of relying on paper invoices, OAC integrates directly with engine monito
 
 ## 4. Quick Start (Simulate a Credit Settlement)
 ```python
-# Our core algorithm: Turning fuel flow into cash flow.
-from protocol import AeroCarbonTollgate
+# --- OAC Settlement Engine ---
+# Logic: SAF Mass Flow -> Carbon Multiplier -> On-chain Minting
+from protocol import AeroCarbonTollgate 
 
 tollgate = AeroCarbonTollgate()
-# Simulate a flight consuming 50,000kg of SAF
+# Fuel: 50,000kg SAF | Efficiency: ISO-14064 Standard
 credit = tollgate.calculate_on_chain_credit(50000, "SAF")
 print(f"Verified Credit: ${credit}")
 
 ---
 ### ⚖️ Intellectual Property & Originality Notice
 
-**First Mover Advantage:** This protocol, including its core logic of bridging aircraft engine thermodynamic data with real-time carbon credit financial settlement, was first conceptualized and published by **Chen (@ChenAeroCarbonArchitect)** on **April 15, 2026**.
+First Mover Advantage:This protocol, including its core logic of bridging aircraft engine thermodynamic data with real-time carbon credit financial settlement, was first conceptualized and published by Chen (@ChenAeroCarbonArchitect)on April 15, 2026.
 
-**Anti-Plagiarism Warning:** 1. This repository serves as a **Permanent Time-Stamped Proof of Originality** on the global GitHub network. 
-2. Any unauthorized commercial use, corporate adaptation, or "white-labeling" of this specific logic without attribution is a violation of international open-source ethics and intellectual property principles.
-3. We welcome academic collaboration, but for corporate integration or institutional adoption, please contact the author for a **Commercial License**.
+### License & Attribution
+This protocol is licensed under [MIT/Commercial]. Intellectual Property established via GitHub Timestamp: 2026-04-15.
 
-**"We have the timestamp. We have the code. We have the future."** 
+"We have the timestamp. We have the code. We have the future."
