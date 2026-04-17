@@ -1,0 +1,34 @@
+name: OAC Automated Settlement Engine
+
+on:
+  push:
+    paths:
+      - 'data/**' # Trigger only when data changes
+
+jobs:
+  audit_and_settle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permission to update the ledger
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Core Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Execute OAC Protocol Audit
+        run: python settlement_engine.py
+
+      - name: Commit Settlement Proof to Ledger
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "OAC-Audit-Bot"
+          git add ledger.txt
+          git commit -m "Financial Audit: Asset Minted [Proof of Concept]" || exit 0
+          git push
