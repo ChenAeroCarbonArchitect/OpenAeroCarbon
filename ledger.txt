@@ -1,0 +1,8 @@
+
+[OAC SETTLEMENT PROOF]
+Flight ID     : OAC-2026-001
+Asset Minted  : $17190.4 USD
+Timestamp     : 2026-04-16T12:00:00Z
+Protocol Ver  : v1.0.0-ALPHA
+Status        : VERIFIED
+---------------------------------------
