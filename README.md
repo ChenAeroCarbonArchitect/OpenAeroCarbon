@@ -1,41 +1,38 @@
-# OpenAeroCarbon (OAC) Protocol ✈️🌱
+# ✈️ OpenAeroCarbon (OAC) Protocol
+**The Decentralized Financial Settlement Layer for Sustainable Aviation Fuel (SAF).**
 
-**The Decentralized Settlement Layer for Sustainable Aviation Fuel (SAF) Carbon Credits.**
+[![API Status](https://img.shields.io/website?url=https%3A%2F%2Fopen-aero-carbon.onrender.com%2Fdocs&label=API%20Status&style=flat-square&color=green)](https://open-aero-carbon.onrender.com/docs)
+[![Audit Engine](https://img.shields.io/badge/Audit-Automated-blue?style=flat-square)](https://github.com/ChenAeroCarbonArchitect/OpenAeroCarbon/actions)
+[![License](https://img.shields.io/badge/License-MIT-gold.svg?style=flat-square)](LICENSE)
 
-## 1. The Core Essence (Why we exist)
-Traditional aviation carbon auditing is slow, manual, and prone to fraud. As the world transitions to **Sustainable Aviation Fuel (SAF)**, the industry lacks a real-time, automated "Truth Engine" to quantify environmental impact. 
+## 💎 The Essence
+OAC is a high-precision protocol designed to bridge the gap between **Aviation Telemetry** and **On-Chain Carbon Assets**. By eliminating manual auditing overhead, OAC enables real-time minting of carbon credits through verified Sustainable Aviation Fuel (SAF) consumption data.
 
-**OpenAeroCarbon** bridges the gap between jet engine physical sensors and global carbon markets. We turn thermal energy data into digital assets.
-
-## 2. How It Works (The "Tollgate" Logic)
-Instead of relying on paper invoices, OAC integrates directly with engine monitoring systems:
-1. **Data Ingestion:** Real-time monitoring of fuel mass flow and combustion efficiency.
-2. **Quantification:** Algorithms calculate exact CO2 reduction based on SAF lifecycle factors.
-3. **Tokenization:** Automated minting of "Carbon Credits" via smart contracts.
-4. **Settlement:** Airlines get instant tax offsets; we collect a **1% protocol fee** for every credit verified.
-
-## 3. Tech Stack
-- **Engine Modeling:** Python-based thermodynamic simulations.
-- **Trust Layer:** Immutable ledger for carbon footprint traceability.
-- **Connectivity:** Future-ready API for IoT integration with engine OEMs (Boeing/Airbus/RR).
-
-## 4. Quick Start (Simulate a Credit Settlement)
-```python
-# --- OAC Settlement Engine ---
-# Logic: SAF Mass Flow -> Carbon Multiplier -> On-chain Minting
-from protocol import AeroCarbonTollgate 
-
-tollgate = AeroCarbonTollgate()
-# Fuel: 50,000kg SAF | Efficiency: ISO-14064 Standard
-credit = tollgate.calculate_on_chain_credit(50000, "SAF")
-print(f"Verified Credit: ${credit}")
+**Core Philosophy:** *Zero Human Intervention. Zero Friction. Code is Law.*
 
 ---
-### ⚖️ Intellectual Property & Originality Notice
 
-First Mover Advantage:This protocol, including its core logic of bridging aircraft engine thermodynamic data with real-time carbon credit financial settlement, was first conceptualized and published by Chen (@ChenAeroCarbonArchitect)on April 15, 2026.
+## 🚀 Live Infrastructure
 
-### License & Attribution
-This protocol is licensed under [MIT/Commercial]. Intellectual Property established via GitHub Timestamp: 2026-04-15.
+### 1. Global Settlement API (Production Ready)
+Our engine is deployed on a distributed cloud environment, providing instant carbon asset valuation via RESTful API.
+* **Endpoint:** `https://open-aero-carbon.onrender.com/mint`
+* **Interactive Docs:** [OAC Swagger UI](https://open-aero-carbon.onrender.com/docs)
+* *Integrate your airline's telemetry system in less than 5 minutes.*
 
-"We have the timestamp. We have the code. We have the future."
+### 2. Autonomous Audit Engine (GitHub Action)
+Every data injection into the `data/` directory triggers a serverless audit. The protocol verifies the fuel mass flow, validates against ISO-14064 standards, and appends the result to an immutable ledger.
+* **View Real-time Ledger:** [`ledger.txt`](./ledger.txt)
+
+---
+
+## 🛠 Technical Architecture
+
+- **Asset Minting Logic:** High-precision telemetry-to-USD conversion.
+- **Security:** Strict assertion layers to prevent data pollution.
+- **Oracle Ready:** Architecture prepared for Chainlink/EU-ETS real-time price feeds.
+
+```python
+# The logic that secures the future of aviation
+value = tollgate.mint_carbon_credit(fuel_kg=60000, fuel_type="SAF")
+# Result: Institutional-grade carbon credit ready for liquidation.
