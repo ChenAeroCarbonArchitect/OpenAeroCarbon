@@ -2,8 +2,10 @@
 **The Decentralized Financial Settlement Layer for Sustainable Aviation Fuel (SAF).**
 
 [![API Status](https://img.shields.io/website?url=https%3A%2F%2Fopen-aero-carbon.onrender.com%2Fdocs&label=API%20Status&style=flat-square&color=green)](https://open-aero-carbon.onrender.com/docs)
-[![Audit Engine](https://img.shields.io/badge/Audit-Automated-blue?style=flat-square)](https://github.com/ChenAeroCarbonArchitect/OpenAeroCarbon/actions)
-[![License](https://img.shields.io/badge/License-MIT-gold.svg?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Protocol-GSS--v1.0--Alpha-blue?style=flat-square)](./SPECIFICATION.md)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square)](https://github.com/ChenAeroCarbonArchitect/OpenAeroCarbon/actions)
+[![Aviation](https://img.shields.io/badge/Industry-Aviation-orange?style=flat-square)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 ## 💎 The Essence
 OAC is a high-precision protocol designed to bridge the gap between **Aviation Telemetry** and **On-Chain Carbon Assets**. By eliminating manual auditing overhead, OAC enables real-time minting of carbon credits through verified Sustainable Aviation Fuel (SAF) consumption data.## ⚖️ The Efficiency Revolution: Redefining Value
