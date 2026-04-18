@@ -15,8 +15,9 @@ class FlightData(BaseModel):
 async def root():
     return {
         "status": "ONLINE",
+        "standard": "GSS-v1.0.0-REFERENCE",
         "protocol": "OAC-V1.1-WEB3",
-        "message": "Code is Law."
+        "message": "Code is Law.Efficiency is the only audit."
     }
 
 @app.post("/mint")
