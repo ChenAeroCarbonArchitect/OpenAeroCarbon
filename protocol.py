@@ -3,16 +3,21 @@ import time
 
 class AeroCarbonTollgate:
     """
-    [OAC-PROTOCOL-v1.1.0-WEB3-READY]
+    [GSS-v1.0-REFERENCE-IMPLEMENTATION]
     -------------------------------------------------------------------------
+    Official implementation of the Green Sky Standard (GSS) v1.0.0.
     Logic: Automated Carbon Asset Settlement with Cryptographic Fingerprinting.
-    Standard: Derived from ISO-14064-2 & EU ETS 2026 Spot Pricing.
+    Compliance: ISO-14064-2 & ICAO CORSIA Baseline.
     -------------------------------------------------------------------------
     """
 
     def __init__(self):
+        # The core versioning string identifying this as the GSS Reference
+        self.PROTOCOL_SPEC = "GSS-v1.0.0-ALPHA"
+        
         # Current EU ETS projected benchmark (USD/Metric Ton)
         self.CARBON_PRICE = 85.0  
+        
         # Sustainable Aviation Fuel (SAF) Efficiency Multiplier
         self.SAF_MULTIPLIER = 0.8  
 
